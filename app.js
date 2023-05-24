@@ -4,6 +4,10 @@ const app = express();   // this can be anything app or map or lap hfhfhfh dap
 app.use(express.json())
 // app.use(express.json());  // this line make this app understand json
 
+
+import fetch from 'node-fetch';
+
+
 const mongoose = require('mongoose')
 mongoose.connect("mongodb+srv://userclike:sgnikhil@clike.x8u8ys5.mongodb.net/visitorcount?retryWrites=true&w=majority")
 
