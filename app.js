@@ -5,7 +5,10 @@ app.use(express.json())
 // app.use(express.json());  // this line make this app understand json
 
 
-import fetch from 'node-fetch';
+// const fetch = require('node-fetch');
+// import fetch from 'node-fetch';
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+
 
 
 const mongoose = require('mongoose')
