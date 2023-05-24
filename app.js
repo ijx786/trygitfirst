@@ -5,9 +5,9 @@ app.use(express.json())
 // app.use(express.json());  // this line make this app understand json
 
 
-// const fetch = require('node-fetch');
+const fetch = require('node-fetch');            // uses lower version  run in terminal   npm install node-fetch@2
 // import fetch from 'node-fetch';
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+// const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));  // uses higher version  run in terminal npm install node-fetch
 
 
 
